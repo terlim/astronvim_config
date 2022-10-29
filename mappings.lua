@@ -21,6 +21,12 @@ return {
         ["<C-a>"] = { "gg<S-v>G", desc = "Select all" },
         ["<A-k>"] = { "<cmd>m .-2<CR>", desc = "move line up" },
         ["<A-j>"] = { "<cmd>m .+1<CR>", desc = "move line down" },
+
+        -- Navigate buffers
+        ["<S-Right>"] = { "<cmd>BufferLineCycleNext<cr>", desc = "Next buffer tab" },
+        ["<S-Left>"] = { "<cmd>BufferLineCyclePrev<cr>", desc = "Previous buffer tab" },
+        ["<S-j>"] = "<Nop>",
+        ["<S-k>"] = "<Nop>",
     },
     v = {
         ["<A-j>"] = { ":m '>+1<cr>gv=gv" },
