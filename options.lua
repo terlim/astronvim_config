@@ -9,6 +9,12 @@ return {
     wrap = true,
     showbreak = "↪ ",
     list = true,
+    autoindent = true,
+    completeopt = { "menu", "menuone", "noselect" },
+    cursorline = true,
+    diffopt = { 'internal', 'filler', 'closeoff', 'vertical' },
+    incsearch = true,
+    relativenumber = true,
     listchars = {
       tab = "→ ",
       extends = "⟩",
@@ -17,6 +23,8 @@ return {
       nbsp = "␣",
       eol = "↲",
     },
+    pumblend = 10,
+    winblend = 10,
   },
   g = {
     loaded_matchit = true,
